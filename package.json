@@ -5,7 +5,7 @@
   "scripts": {
     "build": "npm run parcel && npm run sass",
     "dev": "parcel src/index.html",
-    "pro": "parcel build src/index.html --dist-dir docs/ --public-url //jomorespi.github.io/"
+    "pro": "parcel build src/index.html --dist-dir docs/ --public-url //jomorespi.github.io/jomorespi2022"
   },
   "keywords": [],
   "author": "",
