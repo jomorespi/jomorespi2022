@@ -1,0 +1,103 @@
+@tailwind base
+@tailwind components
+@tailwind utilities
+
+$black: #1e1f21
+$green: #a2e3c4
+$yellow: #fffbdc
+$white: #fefefe
+
+:root
+    @apply text-base
+
+b,
+strong
+    @apply font-medium
+
+a
+    box-shadow: inset 0 -14px 0 $yellow
+    @apply leading-none lowercase font-medium transition-all duration-500
+    &::before
+        content: "\a"
+        white-space: pre
+    &:hover
+        box-shadow: inset 0 -21px 0 $green
+
+abbr[title]
+    text-decoration: none
+
+ul
+    li
+        @screen xl
+            background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='95.487' height='43.506' viewBox='0 0 95.487 43.506'%3E%3Cg transform='translate(-972 -545.001)'%3E%3Cg transform='translate(972 566.753)'%3E%3Cpath d='M0,0H93.361' fill='none' stroke='%231e1f21' stroke-width='2'/%3E%3C/g%3E%3Cpath d='M0,0,21.046-21.046,0-42.092' transform='translate(1045.027 587.8)' fill='none' stroke='%231e1f21' stroke-width='2'/%3E%3C/g%3E%3C/svg%3E%0A") no-repeat left top
+            @apply pl-24 transition-all duration-500 relative
+            &:hover
+                background-position-x: 10px
+            
+#animated-content
+    @screen lg
+        background: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='utf-8'%3F%3E%3C!-- Generator: Adobe Illustrator 25.2.1, SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3E%3Csvg version='1.1' id='Capa_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 103.5 1093.6' enable-background='new 0 0 103.5 1093.6' xml:space='preserve'%3E%3Cg transform='translate(-1757 -20.521)'%3E%3Cg transform='translate(1757 567.313)'%3E%3Cpath fill='%23A2E3C4' d='M103.5,109.4L51.7,57.6L0,109.4H103.5z'/%3E%3C/g%3E%3Cg transform='translate(1757 1004.746)'%3E%3Cpath fill='%23A2E3C4' d='M103.5,109.4L51.7,57.6L0,109.4H103.5z'/%3E%3C/g%3E%3Cg transform='translate(1757 348.597)'%3E%3Cpath fill='%23A2E3C4' d='M103.5,109.4L51.7,57.6L0,109.4H103.5z'/%3E%3C/g%3E%3Cg transform='translate(1757 786.03)'%3E%3Cpath fill='%23A2E3C4' d='M103.5,109.4L51.7,57.6L0,109.4H103.5z'/%3E%3C/g%3E%3Cg transform='translate(1757 676.671)'%3E%3Cpath fill='%23A2E3C4' d='M103.5,109.4L51.7,57.6L0,109.4H103.5z'/%3E%3C/g%3E%3Cg transform='translate(1757 239.238)'%3E%3Cpath fill='%23A2E3C4' d='M103.5,109.4L51.7,57.6L0,109.4H103.5z'/%3E%3C/g%3E%3Cg transform='translate(1757 457.955)'%3E%3Cpath fill='%23A2E3C4' d='M103.5,109.4L51.7,57.6L0,109.4H103.5z'/%3E%3C/g%3E%3Cg transform='translate(1757 895.388)'%3E%3Cpath fill='%23A2E3C4' d='M103.5,109.4L51.7,57.6L0,109.4H103.5z'/%3E%3C/g%3E%3Cg transform='translate(1757 129.88)'%3E%3Cpath fill='%23A2E3C4' d='M103.5,109.4L51.7,57.6L0,109.4H103.5z'/%3E%3C/g%3E%3Cg transform='translate(1757 20.521)'%3E%3Cpath fill='%23A2E3C4' d='M103.5,109.4L51.7,57.6L0,109.4H103.5z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E%0A") repeat-y 
+        background-position: calc(100% - 80px) top
+        background-size: 85px
+
+#decorative
+    div
+        @apply bg-contain bg-center bg-no-repeat fixed
+        &.treball-en-equip
+            @screen sm
+                width: 120px
+                height: 97px
+                background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='121.841' height='98.98' viewBox='0 0 121.841 98.98'%3E%3Cg transform='translate(-696.057 -123.52)'%3E%3Cpath d='M0,83.357H82.093V0H0Z' transform='translate(711.962 125.01) rotate(11)' fill='%23a2e3c4'/%3E%3Cg transform='matrix(0.921, -0.391, 0.391, 0.921, 726.618, 156.335)'%3E%3Cpath d='M20.157,40.313A20.157,20.157,0,1,0,0,20.157,20.156,20.156,0,0,0,20.157,40.313Z' fill='none' stroke='%231e1f21' stroke-width='2'/%3E%3C/g%3E%3Cg transform='matrix(0.921, -0.391, 0.391, 0.921, 707.727, 164.354)'%3E%3Cpath d='M20.157,40.313A20.157,20.157,0,1,0,0,20.157,20.156,20.156,0,0,0,20.157,40.313Z' fill='none' stroke='%231e1f21' stroke-width='2'/%3E%3C/g%3E%3Cg transform='matrix(0.921, -0.391, 0.391, 0.921, 745.51, 148.316)'%3E%3Cpath d='M20.157,40.313A20.157,20.157,0,1,0,0,20.157,20.156,20.156,0,0,0,20.157,40.313Z' fill='none' stroke='%231e1f21' stroke-width='2'/%3E%3C/g%3E%3Cg transform='matrix(0.921, -0.391, 0.391, 0.921, 763.727, 140.583)'%3E%3Cpath d='M20.157,40.313A20.157,20.157,0,1,0,0,20.157,20.156,20.156,0,0,0,20.157,40.313Z' fill='none' stroke='%231e1f21' stroke-width='2'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E%0A")
+                top: 9vh
+                left: 75vw
+            @screen lg
+                top: 10vh
+                left: 65vw
+            @screen xl
+                top: 10vh
+                left: 40vw
+        &.creativitat
+            @screen sm
+                width: 96px
+                height: 96px
+                background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='95.73' height='95.936' viewBox='0 0 95.73 95.936'%3E%3Cg transform='translate(-727.858 -399.91)'%3E%3Crect width='84.415' height='84.415' transform='translate(739.173 411.431)' fill='%23a2e3c4'/%3E%3Cpath d='M.5,27.609H83.609V-55.5H.5Z' transform='translate(728.358 456.41)' fill='none' stroke='%231e1f21' stroke-width='2'/%3E%3Cpath d='M.5,12.443H60.943V-48H.5Z' transform='translate(728.358 460.243)' fill='none' stroke='%231e1f21' stroke-width='2'/%3E%3Cpath d='M0,28.62H84.62V-56H0Z' transform='translate(728.102 456.154)' fill='none'/%3E%3Cpath d='M22-1.712H61.288V-41H22Z' transform='translate(739.346 463.82)' fill='none' stroke='%231e1f21' stroke-width='2'/%3E%3Cpath d='M22-15.867H40.133V-34H22Z' transform='translate(739.346 467.398)' fill='none' stroke='%231e1f21' stroke-width='2'/%3E%3C/g%3E%3C/svg%3E%0A")
+                top: 31vh
+                left: 72vw
+            @screen lg
+                top: 30vh
+                left: 50vw
+            @screen xl
+                top: 35vh
+                left: 41vw
+        &.capacitat-analitica
+            @screen sm
+                width: 111px
+                height: 109px
+                background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='111.659' height='109.247' viewBox='0 0 111.659 109.247'%3E%3Cg transform='translate(-657.436 -666.377)'%3E%3Crect width='89.199' height='89.199' transform='matrix(0.966, -0.259, 0.259, 0.966, 657.436, 689.463)' fill='%23a2e3c4'/%3E%3Cpath d='M26.994,0h-49.75L-47.631,43.085-22.756,86.17h49.75L51.869,43.085Z' transform='translate(716.071 671.334)' fill='none' stroke='%231e1f21' stroke-width='2'/%3E%3Cpath d='M0,31.737H101.31V-56H0Z' transform='translate(667.535 726.551)' fill='none'/%3E%3Cpath d='M14.441,5.285l-11-11L-11.588-1.688l-4.027,15.027,11,11,15.027-4.027Z' transform='translate(718.777 705.107)' fill='none' stroke='%231e1f21' stroke-width='2'/%3E%3Cpath d='M12.978,0-14.033,27.011l9.888,36.9,36.9,9.886L59.761,46.783l-9.886-36.9Z' transform='translate(695.325 677.522)' fill='none' stroke='%231e1f21' stroke-width='2'/%3E%3C/g%3E%3C/svg%3E%0A")
+                top: 53vh
+                left: 77vw
+            @screen lg
+                top: 55vh
+                left: 25vw
+            @screen xl
+                top: 58vh
+                left: 35vw
+        &.autonomia
+            @screen sm
+                width: 98px
+                height: 99px
+                background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='97.884' height='98.705' viewBox='0 0 97.884 98.705'%3E%3Cdefs%3E%3CclipPath%3E%3Cpath d='M0,28.617H85.235V-56.618H0Z' transform='translate(0 56.618)' fill='none'/%3E%3C/clipPath%3E%3C/defs%3E%3Cg transform='translate(-451.058 -853)'%3E%3Crect width='75.764' height='75.765' transform='translate(478.21 853.821) rotate(21)' fill='%23a2e3c4'/%3E%3Cg transform='translate(463.707 853)'%3E%3Cg transform='translate(0 0)' clip-path='url(%23clip-path)'%3E%3Cg transform='translate(1.218 1.683)'%3E%3Cpath d='M13.9,0-27.5,82.8H55.3Z' transform='translate(27.5)' fill='none' stroke='%231e1f21' stroke-width='2'/%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E")
+                top: 77vh
+                left: 75vw
+            @screen lg
+                top: 77vh
+                left: 10vw
+            @screen xl
+                top: 72vh
+                left: 22vw
+
+@keyframes bg-arrows-desktop
+    0%
+        background-position-y: 0
+    100%
+        background-position-y: -90px
